@@ -19,9 +19,12 @@ void printvalue(pnode x) {
     printf("task peformed to print the value stored in struct : %d\n", x->value);
 }
 
-void printid(pnode x) {
+void printid_value(pnode x) {
     printf("%d, this is the task ID.\n", x->id);
+    printf("%d, now have added the value too with it\n", x->value);
 }
+
+
 
 int main() {
     
@@ -58,8 +61,8 @@ int main() {
         ptr = ptr->prev;
     }
 
-    task1.task = printid;
-    task2.task = printid;
+    task1.task = printid_value;
+    task2.task = printid_value;
 
     printf("\n\n");
 
