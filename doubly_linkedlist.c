@@ -71,8 +71,5 @@ int main() {
         ptr = ptr->next;
     }
 
-
-
-
     return 0;
 }
