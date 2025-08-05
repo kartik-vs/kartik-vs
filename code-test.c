@@ -5,9 +5,9 @@
 typedef struct node {
     uint8_t value;
     uint16_t delay;
-    
+
     struct node* next;
-}
+};
 
 int main() {
     uint8_t value;
